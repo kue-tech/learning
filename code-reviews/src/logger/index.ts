@@ -1,6 +1,9 @@
-// Logger goes here
-// You can modify this as you see fit
+const {createLogger, format, transports} = require("winston");
 
-export default () => {
-   console.log('Overwrite this and build a logger here')
-}
+const logger = createLogger({
+   level: "debug",
+   format: format.json(),
+   transports: [new transports.Console()],
+});
+
+export default logger;

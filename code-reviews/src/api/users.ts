@@ -1,7 +1,8 @@
 import logger from '../logger'
 
 export function GET(req, res, next) {
-   logger() // pass some event info here
+   // pass some event info here
+   logger.log("debug", "Hello, World!");
    res.json([
       {
          id: 1,
