@@ -1,7 +1,7 @@
 import logger from '../logger'
 
 export function GET(req, res, next) {
-   logger() // pass some event info here
+   logger.info("Users accessed", __filename) // pass some event info here
    res.json([
       {
          id: 1,

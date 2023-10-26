@@ -7,5 +7,6 @@ const app = express()
 app.get('/', getUsers)
 
 app.listen(3000, () => {
-   logger() // pass some event info here
+   logger.info(`Server running`, __filename);
+   // ToAdd: on which port is server running?
 })
