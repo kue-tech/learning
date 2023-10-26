@@ -7,5 +7,5 @@ const app = express()
 app.get('/', getUsers)
 
 app.listen(3000, () => {
-   logger() // pass some event info here
+   logger('Server started on port 3000') // pass some event info here
 })
